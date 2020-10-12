@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오엔터프라이즈</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        #gnb {background-color: #fdfdfd; border-bottom: 1px solid #999;}
+        #gnb li a{ color: black;}
+        #gnb .logo {background-image: url("../img/logo_b.png");}
+
+        .tabbar {clear: both; width: 100%; height: 40px; border-bottom: 1px solid #333; padding-top: 100px;}
+        #tab { width: 1280px; margin: 0 auto;}
+        .tabbar li { float: left;}
+        .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
+        #tabbar_txt { color: #999;}
+        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+
+        #boldtxt {font-weight: 900; font-size: 18px; color: #333;}
+        #sintxt { margin-top: 20px; color: #666; font-size: 15px;}
+
+        #map { width: 1280px; height: 500px; margin: 0 auto;}
+        
+        .intro {clear: both; width: 1280px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px;}
+        .intro ul { width: 500px; display: inline-block;}
+        .intro ul:last-child {float: right;}
+        .intro ul li { width: 600px;}
+        .intro ul li p {display: inline-block;width: 300px; text-align: left;}
+        .intro ul li p:first-child {display: inline-block; width: 100px; font-weight: 800;}
+        .intro ul a { display: block; color: #666; border: 1px solid #666; width: 150px; height: 50px; line-height: 50px; padding-left: 20px;}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="gnb">
+           <ul class="nav">
+               <a href="index.html" class="logo"></a>
+              <li>
+                  <a href="company_introduce.html">소개</a>
+                  <a href="company_introduce.html" id="sub_menu">회사소개</a>
+                  <a href="welfare_system.html" id="sub_menu">복지제도</a>
+                  <a href="com_company.html" id="sub_menu">오시는길</a>
+              </li>
+              <li>
+                  <a href="#">새소식</a>
+                  <a href="#" id="sub_menu">언론보도</a>
+                  <a href="#" id="sub_menu">회사소식</a>
+              </li>
+              <li>
+                  <a href="kakaoWork.html">서비스</a>
+                  <a href="kakaoiConnect.html" id="sub_menu">Kakao i Connect</a>
+                  <a href="kakaoI.html" id="sub_menu">Kakao i</a>
+                  <a href="kakaoWork.html" id="sub_menu">Kakao Work</a>
+                  <a href="kakaoiCloud.html" id="sub_menu">Kakao i Cloud</a>
+                  <a href="kakaoiInsight.html" id="sub_menu">Kakao i Insight</a>
+              </li>
+              <li>
+                  <a href="kakaoiEngine.html">기술</a>
+                  <a href="kakaoiEngine.html" id="sub_menu">Kakao i <span class="link"></a>
+              </li>
+              <li>
+                  <a href="blog.html">기술블로그</a>
+                  <a href="blog.html"id="sub_menu">Tech &</a>
+              </li>
+              <li>
+                  <a href="partnerShip.html">제휴문의</a>
+                  <a href="partnerShip.html"id="sub_menu">제휴문의</a>
+              </li>
+              <li class="injae">
+                  <a href="#">인재영입 <span class="link"></a>
+              </li>
+           </ul>
+        </nav>
+    </header>
+
+    <nav class="tabbar">
+        <ul id="tab">
+            <li><a href="index.html" id="tabbar_txt">홈</a></li>
+            <li><a href="company_introduce.html" id="tabbar_txt">소개</a></li>
+            <li><a href="com_company.html">오시는 길</a></li>
+        </ul>
+    </nav>
+    <p style="margin: 100px auto 20px; width: 1280px; font-weight: 800; font-size: 24px;">오시는 길</p>
+    <!-- 지도를 표시할 div 입니다 -->
+    <div id="map"></div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac8f3403fd1d728ab70d3644e3dae800"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.402115, 127.108504), // 지도의 중심좌표
+            level: 2// 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+    </script>
+    <div class="intro">
+        <ul>
+            <p id="boldtxt">카카오엔터프라이즈</p>
+            <li>
+                <p>주소</p>
+                <p id="sintxt">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동
+                    (주)카카오엔터프라이즈</p>
+            </li>
+            <li>
+                <p>이메일</p>
+                <p id="sintxt">contact@kakaoenterprise.com</p>
+            </li>
+        </ul>
+        <ul>
+            <p id="boldtxt">제휴문의</p>
+            <p id="sintxt">카카오엔터프라이즈와 함께 당신의 비즈니스에 AI를 더하세요.</p>
+            <a href="">문의하기 <span style="margin-left: 50px;">></span></a>
+        </ul>
+    </div>
+    <footer class="ft">
+        <hr class="line" />
+        <div class="nav_fr">
+            <nav class="fnb">
+                <ul class="nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소식</a></li>
+                    <li><a href="">오시는길</a></li>
+                    <li><a href="">제휴문의</a></li>
+                    <li><a href="">사이버 윤리실</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="addr">
+            <span class="ad1">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)카카오엔터프라이즈 | contact@kakaoenterprise.com</span>
+        </p>
+        <p class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오 엔터프라이즈</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/js/jquery.js">
+    <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".anibox1").animate({"margin-left":"400px"},3000,function(){
+				$(".anibox1").css("opacity","0");
+				if($(".anibox1").not(":animated")) { $(".anibox2").animate({"margin-left":"400px"},3000, function(){
+					$(".anibox2").css("opacity",0);
+					if($(".anibox2").not(":animated")) { $(".anibox3").animate({"margin-left":"400px"},3000, function(){
+						$(".anibox3").css("opacity",0);
+						if($(".anibox3").not(":animated")) { $(".anibox4").animate({"margin-left":"400px"}, 3000, function(){
+							$(".anibox4").css("opacity",0);
+							if($(".anibox4").not(":animated")) { $(".anibox5").animate({"margin-left":"400px"},3000, function(){
+								$(".anibox5").css("opacity",0);
+									}); }
+							}); }
+						}); }
+					}); }
+				}); 
+        });
+     </script>
+    
+    <header id="header">
+        <nav id="gnb">
+           <ul class="nav">
+               <a href="index.html" class="logo"></a>
+              <li>
+                  <a href="company_introduce.html">소개</a>
+                  <a href="company_introduce.html" id="sub_menu">회사소개</a>
+                  <a href="welfare_system.html" id="sub_menu">복지제도</a>
+                  <a href="com_company.html" id="sub_menu">오시는길</a>
+              </li>
+              <li>
+                  <a href="#">새소식</a>
+                  <a href="#" id="sub_menu">언론보도</a>
+                  <a href="#" id="sub_menu">회사소식</a>
+              </li>
+              <li>
+                  <a href="kakaoWork.html">서비스</a>
+                  <a href="kakaoiConnect.html" id="sub_menu">Kakao i Connect</a>
+                  <a href="kakaoI.html" id="sub_menu">Kakao i</a>
+                  <a href="kakaoWork.html" id="sub_menu">Kakao Work</a>
+                  <a href="kakaoiCloud.html" id="sub_menu">Kakao i Cloud</a>
+                  <a href="kakaoiInsight.html" id="sub_menu">Kakao i Insight</a>
+              </li>
+              <li>
+                  <a href="kakaoiEngine.html">기술</a>
+                  <a href="kakaoiEngine.html" id="sub_menu">Kakao i <span class="link" ></a>
+              </li>
+              <li>
+                  <a href="blog.html">기술블로그</a>
+                  <a href="blog.html"id="sub_menu">Tech &</a>
+              </li>
+              <li>
+                  <a href="partnerShip.html">제휴문의</a>
+                  <a href="partnerShip.html"id="sub_menu">제휴문의</a>
+              </li>
+              <li class="injae">
+                  <a href="#">인재영입 <span class="link" ></a>
+              </li>
+           </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="con_video">
+          <div class="inner_video">
+                <ul>
+                    <li class="video_sub">If Kakao Enterprise,</li>
+                </ul>
+                <ul class="anibox1" id="hide">
+                    <li class="video_tit" >Business</li>
+                </ul>
+                <ul class="anibox2" id="hide">
+                    <li class="video_tit">Tech</li>
+                </ul>	
+                
+                <ul class="anibox3" id="hide">
+                    <li class="video_tit">Work</li>
+                </ul>
+                <ul class="anibox4" id="hide"> 
+                    <li class="video_tit">Life</li>
+                </ul>
+                <ul class="anibox5" id="hide">
+                    <li class="video_tit">Future</li>
+                </ul>
+            </div>
+         <video id="homeVideo" src="https://t1.kakaocdn.net/kakaoenterprise_com/TOP/vod_index.mp4" muted loop autoplay></video>
+        </div>
+     <!--    <figure class="vs">
+           <ul class="img_box">
+              <li class="item1">
+                 <div class="tit_box">
+                    <h1 class="vs_tit">Global</h1>
+                    <h1 class="vs_tit">Multi-Platform</h1>
+                    <h2 class="vs_tit">Game Company</h2>
+                    <p class="vs_com">카카오게임즈는 자체 개발 역량 강화와</p>
+                    <p class="vs_com">게임사들과의 파트너십을 통해 전 세계 게임 시장을 선도하고 있습니다.</p>
+                    <a href="" class="more">전체 서비스</a>
+                 </div>
+              </li>
+              <li class="item2">
+                 <div class="tit_box">
+                    <h1 class="vs_tit">PC Online</h1>
+                    <h2 class="vs_tit">Game</h2>
+                    <p class="vs_com">카카오게임즈는 양질의 퍼블리싱 게임을 선보이고 있으며</p>
+                    <p class="vs_com">글로벌 경쟁력을 갖춘 대한민국 대표 게임 브랜드로 성장하고 있습니다.</p>
+                    <a href="" class="more">PC게임</a>
+                 </div>
+              </li>
+              <li class="item3">
+                 <div class="tit_box">
+                    <h1 class="vs_tit">Mobile</h1>
+                    <h2 class="vs_tit">Game</h2>
+                    <p class="vs_com">카카오게임즈는 플랫폼과 퍼블리싱 노하우를 기반으로</p>
+                    <p class="vs_com">최상의 서비스를 제공하며 카카오프렌즈 IP를 활용한</p>
+                    <p class="vs_com">자체 게임들을 통해 모바일 게임의 대중화를 이끌고 있습니다.</p>
+                    <a href="" class="more">모바일게임</a>
+                 </div>
+              </li>
+           </ul>
+        </figure>   -->
+         <div class="con_bot">
+             <ul class="cb_box">
+                 <li>
+                     <a href="">
+                         <p class="cb_cate">NEWS</p>
+                         <p class="cb_tit">교보생명,AI챗봇 '러버스2.0'오픈</p>
+                         <p class="cb_txt">[2020-09-22]카카오엔터프라이즈가 교보생명과 함께 AI(인공지능)챗봇 '러버스 2.0'을 개발하였습니다. 챗봇에는 카카오엔터프라이즈의 AI 머신러닝 기술 적용</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="">
+                         <p class="cb_cate">COMPANY</p>
+                         <p class="cb_tit">Why not? &nbsp;&nbsp;&nbsp;&nbsp; If Kakao Enterprise,(&nbsp;&nbsp;&nbsp;&nbsp;)</p>
+                         <p class="cb_cate">당연한 것들에 대한 도전&nbsp;&nbsp;&nbsp;&nbsp;카카오스러운 생각에 대한 기대</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="">
+                         <p class="cb_cate">PARTNERSHIP</p>
+                         <p class="cb_tit">카카오엔터프라이즈는 AI 기술과 플랫폼을 바탕으로 당신과 함께 더 나은 세상을 만들어갑니다.</p>
+                     </a>
+                 </li>
+             </ul>
+             <ul class="cb_box2">
+                 <li>
+                     <a href="">
+                         <p class="cb_cate">SERVICE</p>
+                         <img id="cb_img1" alt="" />
+                         <p class="cb_tit">더 스마트한 비즈니스, 더 특별한 일상</p>
+                         <p class="cb_txt">모바일,금융,이동수단 등 카카오는 이미 우리들의 일상 깊숙이 자리 잡았습니다.여기에 다양한 AI 기술을 더하여 이제는 비즈니스에서도 만날 수 있습니다.</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="sub1.jsp">
+                         <p class="cb_cate">TECHNOLOGY</p>
+                         <img id="cb_img2" alt="" />
+                         <p class="cb_tit">카카오엔터프라이즈의 핵심기술, Kakao i</p>
+                         <p class="cb_txt">AI플랫폼 Kakao i는 카카오엔터프라이즈가 보유한 핵심기술이자 미래 기술의 집약체입니다.</p>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="">
+                         <p class="cb_cate">CAREERS</p>
+                         <img id="cb_img3" alt="" />
+                         <p class="cb_tit">새로운 길에 도전할 크루를 기다립니다.</p>
+                         <p class="cb_txt">AI 기술을 통해 꿈을 현실로 만드는 여정에 함께 해주세요. 아무도 가보지 않은 길을 가는 카카오엔터프라이즈호가 당신의 탑승을 기다립니다.</p>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+        
+     </div>
+
+    <footer class="ft">
+        <hr class="line" />
+        <div class="nav_fr">
+            <nav class="fnb">
+                <ul class="nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소식</a></li>
+                    <li><a href="">오시는길</a></li>
+                    <li><a href="">제휴문의</a></li>
+                    <li><a href="">사이버 윤리실</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="addr">
+            <span class="ad1">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)카카오엔터프라이즈 | contact@kakaoenterprise.com</span>
+        </p>
+        <p class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

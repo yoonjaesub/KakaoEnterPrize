@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오엔터프라이즈</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        #gnb {background-color: #fdfdfd; border-bottom: 1px solid #999;}
+        #gnb li a{ color: black;}
+        #gnb .logo {background-image: url("../img/logo_b.png");}
+
+        .tabbar {clear: both; width: 100%; height: 40px; border-bottom: 1px solid #333; padding-top: 100px;}
+        #tab { width: 1280px; margin: 0 auto;}
+        .tabbar li { float: left;}
+        .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
+        #tabbar_txt { color: #999;}
+        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+
+        .ban {background-image: url(/img/img_welfare01.jpg); width: 100%; height: 700px; background-size: cover; background-repeat: no-repeat; z-index: 5; margin: 0 auto;}
+        .banbox {width: 1280px; margin: 0 auto; padding-top: 160px; padding-right: 200px; text-shadow: 3px -2px 7px #666;}
+        #ailogo {background-image: url(/img/logo_ai.svg); z-index: 9; width: 130px; height: 70px; background-size: contain;}
+        #bantxt { font-weight: 800; font-size: 30px; color: white;}
+
+        #boldtxt {font-weight: 800; font-size: 20px; color: #333;}
+        #sintxt { margin-top: 20px; color: #666; font-size: 15px;}
+
+        .col1 { clear: both; width: 1280px; margin: 0 auto; height: 200px; margin-top: 150px;}
+        .col1_1 p { display: inline-block; float: left; margin-right: 50px; width: 170px;}
+        .col1_1 li {float: left; width: 280px; height: 230px; border-bottom: 1px solid #ddd; margin: 20px;}
+        .col1_1 li p { display: block; width: 510px; width: 280px; margin: 0 auto;}
+        .col1_1 li:nth-child(2) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 30px;}
+        .col1_1 li:nth-child(3) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 30px; background-position: -100px 0px;}
+        .col1_1 li:nth-child(4) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px; 
+        float: right; margin-top: 30px; background-position: -200px 0px; margin-top: 50px;}
+
+        .col1_2 p { display: inline-block; float: left; margin-right: 50px; width: 170px;}
+        .col1_2 li {float: left; width: 280px; height: 230px; border-bottom: 1px solid #ddd; margin: 20px;}
+        .col1_2 li p { display: block; width: 510px; width: 280px; margin: 0 auto;}
+        .col1_2 li:nth-child(2) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; background-position: -300px 0px;}
+        .col1_2 li:nth-child(3) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 20px; background-position: -400px 0px; }
+        .col1_2 li:nth-child(4) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 20px; background-position: -500px 0px;}
+
+        .col1_3 p { display: inline-block; float: left; margin-right: 50px; width: 170px;}
+        .col1_3 li {float: left; width: 280px; height: 230px; border-bottom: 1px solid #ddd; margin: 20px;}
+        .col1_3 li p { display: block; width: 510px; width: 280px; margin: 0 auto;}
+        .col1_3 li:nth-child(2) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; background-position: 0px 100px;}
+        .col1_3 li:nth-child(3) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 20px; background-position: -100px -300px; }
+        .col1_3 li:nth-child(4) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 20px; background-position: -200px -100px;}
+        
+        .col1_4 p { display: inline-block; float: left; margin-right: 50px; width: 170px;}
+        .col1_4 li {float: left; width: 280px; height: 230px; border-bottom: 1px solid #ddd; margin: 20px; margin-bottom: 200px;}
+        .col1_4 li p { display: block; width: 510px; width: 280px; margin: 0 auto;}
+        .col1_4 li:nth-child(2) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 20px; background-position: -300px -100px;}
+        .col1_4 li:nth-child(3) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 0px; background-position: -400px -100px; }
+        .col1_4 li:nth-child(4) p:last-child {display: inline-block; width: 100px; height: 100px; background-image: url(/img/ico_welfare.png); background-size:600px;
+        float: right; margin-top: 20px; background-position: -500px -100px;}
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="gnb">
+           <ul class="nav">
+               <a href="index.html" class="logo"></a>
+              <li>
+                  <a href="company_introduce.html">소개</a>
+                  <a href="company_introduce.html" id="sub_menu">회사소개</a>
+                  <a href="welfare_system.html" id="sub_menu">복지제도</a>
+                  <a href="com_company.html" id="sub_menu">오시는길</a>
+              </li>
+              <li>
+                  <a href="#">새소식</a>
+                  <a href="#" id="sub_menu">언론보도</a>
+                  <a href="#" id="sub_menu">회사소식</a>
+              </li>
+              <li>
+                  <a href="kakaoWork.html">서비스</a>
+                  <a href="kakaoiConnect.html" id="sub_menu">Kakao i Connect</a>
+                  <a href="kakaoI.html" id="sub_menu">Kakao i</a>
+                  <a href="kakaoWork.html" id="sub_menu">Kakao Work</a>
+                  <a href="kakaoiCloud.html" id="sub_menu">Kakao i Cloud</a>
+                  <a href="kakaoiInsight.html" id="sub_menu">Kakao i Insight</a>
+              </li>
+              <li>
+                  <a href="kakaoiEngine.html">기술</a>
+                  <a href="kakaoiEngine.html" id="sub_menu">Kakao i <span class="link" ></a>
+              </li>
+              <li>
+                  <a href="blog.html">기술블로그</a>
+                  <a href="blog.html"id="sub_menu">Tech &</a>
+              </li>
+              <li>
+                  <a href="partnerShip.html">제휴문의</a>
+                  <a href="partnerShip.html"id="sub_menu">제휴문의</a>
+              </li>
+              <li class="injae">
+                  <a href="#">인재영입 <span class="link" ></a>
+              </li>
+           </ul>
+        </nav>
+    </header>
+
+    <nav class="tabbar">
+        <ul id="tab">
+            <li><a href="index.html" id="tabbar_txt">홈</a></li>
+            <li><a href="company_introduce.html" id="tabbar_txt">소개</a></li>
+            <li><a href="welfare_system.html">복지 제도</a></li>
+        </ul>
+    </nav>
+    <div class="ban">
+        <ul class="banbox">
+            <li id="bantxt">개인의 자율성을</li>
+            <li id="bantxt">인정하여 주도적으로</li>
+            <li id="bantxt">일하도록 지원합니다.</li>
+        </ul>
+    </div>
+    <div class="col1">
+        <ul class="col1_1">
+            <p id="boldtxt">스마트하게 일하는 크루를 위해</p>
+            <li>
+                <p id="boldtxt">완전 선택적 근무제</p>
+                <p id="sintxt">한 주의 근무시간이 40시간을 초과하지 않는 범위에서 자율적으로 운영</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">최신/최고급 업무용품 지원</p>
+                <p id="sintxt">최신/최고급 맥북 또는 아이맥, 전자동 스탠딩 데스크 제공</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">출/퇴근 셔틀버스 운영</p>
+                <p id="sintxt">서울 및 수도권, 판교 부근 운영</p>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    <div class="col1">
+        <ul class="col1_2">
+            <p id="boldtxt">가족들을 사랑하는 크루를 위해</p>
+            <li>
+                <p id="boldtxt">실손 의료비 및 보장성 보험</p>
+                <p id="sintxt">단체상해보험 및 본인, 직계 가족과 배우자(배우자 부모님 포함)의 실손 의료비 및 보장성 보험 지원</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">건강검진 및 예방접종</p>
+                <p id="sintxt">크루의 건강관리와 각종 질병 예방을 위해 연 1회 건강검진 및 예방접종</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">대출 이자 지원</p>
+                <p id="sintxt">주택마련, 전세자금을 위한 최대 7,000만원의 대출 이자 지원</p>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    <div class="col1">
+        <ul class="col1_3">
+            <p id="boldtxt"></p>
+            <li>
+                <p id="boldtxt">경조사 지원</p>
+                <p id="sintxt">경조휴가, 경조금과 경조화환(조화), 장례지도사와 장례도우미 파견 및 장의용품 지원</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">직장 어린이집</p>
+                <p id="sintxt">영유아 자녀를 위해 판교 두 곳, 제주 한 곳에서 직장 어린이집 운영</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">명절 선물 지급</p>
+                <p id="sintxt">추석, 설 등의 명절에 30만원의 포인트 지급</p>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    <div class="col1">
+        <ul class="col1_4">
+            <p id="boldtxt">몸과 마음이 건강한 크루를 위해</p>
+            <li>
+                <p id="boldtxt">안식휴가</p>
+                <p id="sintxt">크루의 리프레쉬를 위해 매 3년 근속 시 마다 안식휴가 1개월과 휴가비 200만원 지원</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">편의시설 및 간식 지원</p>
+                <p id="sintxt">크루만의 사내 카페를 운영하고 있으며, 남/녀 수면실 및 엄마방(모유 수유방)과 스낵바를 통한 간식 지원
+                    사내 양호실, 심리상담, 전문 안마사의 서비스 이용 가능</p>
+                <p></p>
+            </li>
+            <li>
+                <p id="boldtxt">다양한 교육 및 도서 지원 혜택</p>
+                <p id="sintxt">MOOC 해외 온라인 수강 및 업무와 관련된 국내외 컨퍼런스 참관비 지원
+                    업무관련 도서 구입비 지원</p>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="ft">
+        <hr class="line" />
+        <div class="nav_fr">
+            <nav class="fnb">
+                <ul class="nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소식</a></li>
+                    <li><a href="">오시는길</a></li>
+                    <li><a href="">제휴문의</a></li>
+                    <li><a href="">사이버 윤리실</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="addr">
+            <span class="ad1">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)카카오엔터프라이즈 | contact@kakaoenterprise.com</span>
+        </p>
+        <p class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

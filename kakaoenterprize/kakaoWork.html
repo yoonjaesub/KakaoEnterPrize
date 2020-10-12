@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오엔터프라이즈</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        #gnb {background-color: #fdfdfd; border-bottom: 1px solid #999;}
+        #gnb li a{ color: black;}
+        #gnb .logo {background-image: url("../img/logo_b.png");}
+
+        .tabbar {clear: both; width: 100%; height: 40px; border-bottom: 1px solid #333; padding-top: 100px;}
+        #tab { width: 1280px; margin: 0 auto;}
+        .tabbar li { float: left;}
+        .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
+        #tabbar_txt { color: #999;}
+        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+
+        .ban {background-image: url(/img/kakaoWork_ban.jpg); width: 100%; height: 700px; background-size: contain; background-repeat: no-repeat; z-index: 5;}
+        .banbox {width: 1280px; margin: 0 auto; padding-top: 120px;}
+        #bantxt { font-weight: 800; font-size: 30px; color: white; text-shadow: 3px -2px 7px #666;}
+        .banbox a { display: block; background-color: #31408E; color: white; font-weight: 550; width: 130px; height: 50px; line-height: 50px;
+                    text-align: center; margin-top: 50px;}
+        .banbox a:hover {background-color: black;}
+
+        .col6 {clear: both; width: 1280px; margin: 0 auto; height: 1000px; margin-top: 100px;}
+        .col6 p:first-child {display: inline-block; width: 230px; font-weight: 800; font-size: 20px;}
+        .col6_img {background-image: url(/img/kakaoWork_img.jpg); width: 900px; height: 500px; float: right; background-size: contain;
+                    } 
+        .col6 ul {clear: both; float: right;width: 900px;}
+        .col6 ul li {float: left; width: 400px; margin: 25px;}
+        
+
+        #boldtxt{font-size: 17px; width: 500px; font-weight: 800;}
+        #sintxt{font-size: 15px; color: #666;}
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="gnb">
+           <ul class="nav">
+               <a href="index.html" class="logo"></a>
+              <li>
+                  <a href="company_introduce.html">소개</a>
+                  <a href="company_introduce.html" id="sub_menu">회사소개</a>
+                  <a href="welfare_system.html" id="sub_menu">복지제도</a>
+                  <a href="com_company.html" id="sub_menu">오시는길</a>
+              </li>
+              <li>
+                  <a href="#">새소식</a>
+                  <a href="#" id="sub_menu">언론보도</a>
+                  <a href="#" id="sub_menu">회사소식</a>
+              </li>
+              <li>
+                  <a href="kakaoWork.html">서비스</a>
+                  <a href="kakaoiConnect.html" id="sub_menu">Kakao i Connect</a>
+                  <a href="kakaoI.html" id="sub_menu">Kakao i</a>
+                  <a href="kakaoWork.html" id="sub_menu">Kakao Work</a>
+                  <a href="kakaoiCloud.html" id="sub_menu">Kakao i Cloud</a>
+                  <a href="kakaoiInsight.html" id="sub_menu">Kakao i Insight</a>
+              </li>
+              <li>
+                  <a href="kakaoiEngine.html">기술</a>
+                  <a href="kakaoiEngine.html" id="sub_menu">Kakao i <span class="link" ></a>
+              </li>
+              <li>
+                  <a href="blog.html">기술블로그</a>
+                  <a href="blog.html"id="sub_menu">Tech &</a>
+              </li>
+              <li>
+                  <a href="partnerShip.html">제휴문의</a>
+                  <a href="partnerShip.html"id="sub_menu">제휴문의</a>
+              </li>
+              <li class="injae">
+                  <a href="#">인재영입 <span class="link" ></a>
+              </li>
+           </ul>
+        </nav>
+    </header>
+
+    <nav class="tabbar">
+        <ul id="tab">
+            <li><a href="index.html" id="tabbar_txt">홈</a></li>
+            <li><a href="kakaoWork.html" id="tabbar_txt">서비스</a></li>
+            <li><a href="kakaoWork.html">카카오 워크</a></li>
+        </ul>
+    </nav>
+    <div class="ban">
+        <ul class="banbox">
+            <li id="bantxt">업무에 AI를 더하다.</li>
+            <li id="bantxt">Kakao Work</li>
+            <a href="#">자세히 보기</a>
+        </ul>
+    </div>
+    <div class="col6">
+        <p>업무용 메신저 플랫폼</p>
+        <div class="col6_img"></div>
+        <ul>
+            <li>
+                <p id="boldtxt">카카오톡을 닮은 업무용 메신저</p>
+                <p id="sintxt">전 국민 누구에게나 익숙한 카카오톡처럼 쉽고 편리하게 사용할 수 있습니다.</p>
+            </li>
+            <li>
+                <p id="boldtxt">강력한 보안 및 관리 기능</p>
+                <p id="sintxt">기업 환경에 꼭 필요한 관리 기능 및 엔터프라이즈급 보안 환경을 제공합니다.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p id="boldtxt">언제 어디서나 가능한 의사소통과 효율적인 업무 처리</p>
+                <p id="sintxt">조직도, 전자결재 및 회사의 주요 시스템을 연동하여 모바일로 업무 효율을 극대화할 수 있습니다.</p>
+            </li>
+            <li>
+                <p id="boldtxt">업무와 일상의 효과적인 분리</p>
+                <p id="sintxt">회사 동료와 메신저를 하기 위해 친구추가 할 필요 없이, 회사에서 사용되는 프로필로 대화할 수 있습니다.</p>
+            </li>
+        </ul>
+    </div>
+    <footer class="ft">
+        <hr class="line" />
+        <div class="nav_fr">
+            <nav class="fnb">
+                <ul class="nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소식</a></li>
+                    <li><a href="">오시는길</a></li>
+                    <li><a href="">제휴문의</a></li>
+                    <li><a href="">사이버 윤리실</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="addr">
+            <span class="ad1">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)카카오엔터프라이즈 | contact@kakaoenterprise.com</span>
+        </p>
+        <p class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

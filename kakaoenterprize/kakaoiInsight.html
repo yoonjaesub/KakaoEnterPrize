@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오엔터프라이즈</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        #gnb {background-color: #fdfdfd; border-bottom: 1px solid #999;}
+        #gnb li a{ color: black;}
+        #gnb .logo {background-image: url("../img/logo_b.png");}
+
+        .tabbar {clear: both; width: 100%; height: 40px; border-bottom: 1px solid #333; padding-top: 100px;}
+        #tab { width: 1280px; margin: 0 auto;}
+        .tabbar li { float: left;}
+        .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
+        #tabbar_txt { color: #999;}
+        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+
+        .ban {background-image: url(/img/kakaoiinsight_ban.jpg); width: 100%; height: 700px; background-size: contain; background-repeat: no-repeat; z-index: 5;}
+        .banbox {width: 1280px; margin: 0 auto; padding-top: 120px;}
+        #bantxt { font-weight: 800; font-size: 30px; color: white; text-shadow: 3px -2px 7px #666;}
+        .banbox a { display: block; background-color: #31408E; color: white; font-weight: 550; width: 130px; height: 50px; line-height: 50px;
+                    text-align: center; margin-top: 50px;}
+        .banbox a:hover {background-color: black;}
+
+        .col6 {clear: both; width: 1280px; margin: 0 auto; height: 1000px; margin-top: 100px;}
+        .col6 p:first-child {display: inline-block; width: 230px; font-weight: 800; font-size: 20px;}
+        .col6_img {background-image: url(/img/kakaoiinsight_img.jpg); width: 900px; height: 500px; float: right; background-size: contain;
+                    } 
+        .col6 ul {clear: both; float: right;width: 900px;}
+        .col6 ul li {float: left; width: 400px; margin: 25px;}
+        
+
+        #boldtxt{font-size: 17px; width: 500px; font-weight: 800;}
+        #sintxt{font-size: 15px; color: #666;}
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="gnb">
+           <ul class="nav">
+               <a href="index.html" class="logo"></a>
+              <li>
+                  <a href="company_introduce.html">소개</a>
+                  <a href="company_introduce.html" id="sub_menu">회사소개</a>
+                  <a href="welfare_system.html" id="sub_menu">복지제도</a>
+                  <a href="com_company.html" id="sub_menu">오시는길</a>
+              </li>
+              <li>
+                  <a href="#">새소식</a>
+                  <a href="#" id="sub_menu">언론보도</a>
+                  <a href="#" id="sub_menu">회사소식</a>
+              </li>
+              <li>
+                  <a href="kakaoWork.html">서비스</a>
+                  <a href="kakaoiConnect.html" id="sub_menu">Kakao i Connect</a>
+                  <a href="kakaoI.html" id="sub_menu">Kakao i</a>
+                  <a href="kakaoWork.html" id="sub_menu">Kakao Work</a>
+                  <a href="kakaoiCloud.html" id="sub_menu">Kakao i Cloud</a>
+                  <a href="kakaoiInsight.html" id="sub_menu">Kakao i Insight</a>
+              </li>
+              <li>
+                  <a href="kakaoiEngine.html">기술</a>
+                  <a href="kakaoiEngine.html" id="sub_menu">Kakao i <span class="link" ></a>
+              </li>
+              <li>
+                  <a href="blog.html">기술블로그</a>
+                  <a href="blog.html"id="sub_menu">Tech &</a>
+              </li>
+              <li>
+                  <a href="partnerShip.html">제휴문의</a>
+                  <a href="partnerShip.html"id="sub_menu">제휴문의</a>
+              </li>
+              <li class="injae">
+                  <a href="#">인재영입 <span class="link" ></a>
+              </li>
+           </ul>
+        </nav>
+    </header>
+
+    <nav class="tabbar">
+        <ul id="tab">
+            <li><a href="index.html" id="tabbar_txt">홈</a></li>
+            <li><a href="kakaoWork.html" id="tabbar_txt">서비스</a></li>
+            <li><a href="kakaoiInsight.html">카카오 i 인사이트</a></li>
+        </ul>
+    </nav>
+    <div class="ban">
+        <ul class="banbox">
+            <li id="bantxt">데이터에 AI를 더하다.</li>
+            <li id="bantxt">Kakao i Insight</li>
+            <!-- <a href="#">자세히 보기</a> -->
+        </ul>
+    </div>
+    <div class="col6">
+        <p>데이터 인사이트 플랫폼</p>
+        <p id="sintxt" style="display: inline-block; width: 900px; margin-left: 140px; margin-bottom: 100px;">
+            다양한 분야의 비즈니스 경험과 카카오의 기술력으로 기업이 데이터 기반의 경쟁력을 확보하고 신규 성장 동력을 개발할 수 있도록 지원합니다.
+        </p>
+        <div class="col6_img"></div>
+        <ul>
+            <li>
+                <p id="boldtxt">클라우드 기반 Ready-to-use 환경</p>
+                <p id="sintxt">별도의 설치과정 없이 Kakao i Cloud 기반으로 데이터의 수집부터 저장, 처리, 분석 및 활용까지 LifeCycle 전반을 손쉽게 관리할 수 있습니다.</p>
+            </li>
+            <li>
+                <p id="boldtxt">카카오의 데이터 기술력이 담긴 다양한 도구</p>
+                <p id="sintxt">카카오가 가진 데이터 기반의 기술력과 이를 효과적으로 활용할 수 있도록 도와주는 다양한 툴로 시장에서 차별화된 경쟁력을 얻을 수 있습니다.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p id="boldtxt">고객을 바라보는 카카오의 차별화된 관점</p>
+                <p id="sintxt">고객의 데이터를 바라보는 카카오의 새로운 시각과 분석 능력을 적극 활용하여, 각 산업 및 기업에 꼭 맞는 Business Insight를 발굴해낼 수 있습니다.</p>
+            </li>
+            <li>
+                <p id="boldtxt">Action으로 연결되는 데이터 기반 가치 창출</p>
+                <p id="sintxt">산업 전반의 영역에서 수집되는 광범위한 데이터를 활용하여 실제적인 업무 혁신과 신규 가치 창출을 위한 Action을 이루어낼 수 있도록 돕습니다.</p>
+            </li>
+        </ul>
+    </div>
+    <footer class="ft">
+        <hr class="line" />
+        <div class="nav_fr">
+            <nav class="fnb">
+                <ul class="nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소식</a></li>
+                    <li><a href="">오시는길</a></li>
+                    <li><a href="">제휴문의</a></li>
+                    <li><a href="">사이버 윤리실</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="addr">
+            <span class="ad1">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)카카오엔터프라이즈 | contact@kakaoenterprise.com</span>
+        </p>
+        <p class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

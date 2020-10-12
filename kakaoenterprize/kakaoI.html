@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오엔터프라이즈</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        #gnb {background-color: #fdfdfd; border-bottom: 1px solid #999;}
+        #gnb li a{ color: black;}
+        #gnb .logo {background-image: url("../img/logo_b.png");}
+
+        .tabbar {clear: both; width: 100%; height: 40px; border-bottom: 1px solid #333; padding-top: 100px;}
+        #tab { width: 1280px; margin: 0 auto;}
+        .tabbar li { float: left;}
+        .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
+        #tabbar_txt { color: #999;}
+        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+
+        .ban {background-image: url(/img/kakaoi_ban.jpg); width: 100%; height: 700px; background-size: contain; background-repeat: no-repeat; z-index: 5;}
+        .banbox {width: 1280px; margin: 0 auto; padding-top: 120px;}
+        #bantxt { font-weight: 800; font-size: 30px; color: white;  text-shadow: 3px -2px 7px #666;}
+        .banbox a { display: block; background-color: #31408E; color: white; font-weight: 550; width: 130px; height: 50px; line-height: 50px;
+                    text-align: center; margin-top: 50px;}
+        .banbox a:hover {background-color: black;}
+        .line {border-bottom: 1px solid #999;}
+        .col6 {clear: both; width: 1280px; margin: 0 auto; height: 800px; margin-top: 100px;}
+        .col6 p:first-child, p:nth-child(2) {display: inline-block; width: 230px; font-weight: 800; font-size: 20px;}
+        .col6_img {background-image: url(/img/kakaoi_img1.jpg); width: 900px; height: 500px; float: right; background-size: contain; }
+        .col6_img2 {background-image: url(/img/kakaoi_img2.jpg); width: 900px; height: 500px; float: right; background-size: contain; } 
+        .col6 ul {clear: both; float: right;width: 900px;}
+        .col6 ul li {width: 1280px; margin: 25px;}
+        .col6 ul li p {display: block;width: 1280px; margin: 0 auto; margin-top: 10px;}
+        
+
+        #boldtxt{font-size: 17px; width: 500px; font-weight: 800;}
+        #sintxt{font-size: 15px; color: #666;}
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="gnb">
+           <ul class="nav">
+               <a href="index.html" class="logo"></a>
+              <li>
+                  <a href="company_introduce.html">소개</a>
+                  <a href="company_introduce.html" id="sub_menu">회사소개</a>
+                  <a href="welfare_system.html" id="sub_menu">복지제도</a>
+                  <a href="com_company.html" id="sub_menu">오시는길</a>
+              </li>
+              <li>
+                  <a href="#">새소식</a>
+                  <a href="#" id="sub_menu">언론보도</a>
+                  <a href="#" id="sub_menu">회사소식</a>
+              </li>
+              <li>
+                  <a href="kakaoWork.html">서비스</a>
+                  <a href="kakaoiConnect.html" id="sub_menu">Kakao i Connect</a>
+                  <a href="kakaoI.html" id="sub_menu">Kakao i</a>
+                  <a href="kakaoWork.html" id="sub_menu">Kakao Work</a>
+                  <a href="kakaoiCloud.html" id="sub_menu">Kakao i Cloud</a>
+                  <a href="kakaoiInsight.html" id="sub_menu">Kakao i Insight</a>
+              </li>
+              <li>
+                  <a href="kakaoiEngine.html">기술</a>
+                  <a href="kakaoiEngine.html" id="sub_menu">Kakao i <span class="link" ></a>
+              </li>
+              <li>
+                  <a href="blog.html">기술블로그</a>
+                  <a href="blog.html"id="sub_menu">Tech &</a>
+              </li>
+              <li>
+                  <a href="partnerShip.html">제휴문의</a>
+                  <a href="partnerShip.html"id="sub_menu">제휴문의</a>
+              </li>
+              <li class="injae">
+                  <a href="#">인재영입 <span class="link" ></a>
+              </li>
+           </ul>
+        </nav>
+    </header>
+
+    <nav class="tabbar">
+        <ul id="tab">
+            <li><a href="index.html" id="tabbar_txt">홈</a></li>
+            <li><a href="kakaoWork.html" id="tabbar_txt">서비스</a></li>
+            <li><a href="kakaoI.html">카카오 i</a></li>
+        </ul>
+    </nav>
+    <div class="ban">
+        <ul class="banbox">
+            <li id="bantxt">일상에 AI를 더하다.</li>
+            <li id="bantxt">Kakao i</li>
+            <a href="#">자세히 보기</a>
+        </ul>
+    </div>
+    <div class="col6 line">
+        <p >Kakao i로 만나는 자동차, 인터페이스 혁신</p>
+        <p style="margin-left: 170px;">카모빌리티 + AI</p>
+        <div class="col6_img"></div>
+        <ul>
+            <li>
+                <p id="boldtxt">자동차 안에서 모든 것을 음성으로 제어할 수 있습니다.</p>
+                <p id="sintxt">Kakao i 는 자동차 안에서의 경험을 더욱 편리하게 만듭니다. 목소리로 길을 찾고, 음악을 듣고, 카톡을 보내며 다양한 서비스를 이용합니다.</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="col6">
+        <p >카카오홈,
+            음성으로 더욱 편리해지는 생활</p>
+        <p style="margin-left: 170px;">스마트홈 + AI</p>
+        <div class="col6_img2"></div>
+        <ul>
+            <li>
+                <p id="boldtxt">카카오홈으로 우리 집을 더 스마트하게 만들 수 있습니다.</p>
+                <p id="sintxt">카카오홈에서는 말 한마디로 생활이 더욱 편리해집니다. Kakao i를 통해 난방, 조명, 다양한 IoT 가전 등 우리 집 곳곳을 음성으로 이용합니다.</p>
+            </li>
+        </ul>
+    </div>
+    <footer class="ft">
+        <hr class="line" />
+        <div class="nav_fr">
+            <nav class="fnb">
+                <ul class="nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소식</a></li>
+                    <li><a href="">오시는길</a></li>
+                    <li><a href="">제휴문의</a></li>
+                    <li><a href="">사이버 윤리실</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="addr">
+            <span class="ad1">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)카카오엔터프라이즈 | contact@kakaoenterprise.com</span>
+        </p>
+        <p class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
