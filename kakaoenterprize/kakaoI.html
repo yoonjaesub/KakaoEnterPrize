@@ -15,12 +15,12 @@
         #tab { width: 1280px; margin: 0 auto;}
         .tabbar li { float: left;}
         .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
-        #tabbar_txt { color: #999;}
-        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+        .tabbar_txt { color: #999;}
+        .tabbar_txt::after { content: ">"; margin-left: 10px;}
 
         .ban {background-image: url(./img/kakaoi_ban.jpg); width: 100%; height: 700px; background-size: contain; background-repeat: no-repeat; z-index: 5;}
         .banbox {width: 1280px; margin: 0 auto; padding-top: 120px;}
-        #bantxt { font-weight: 800; font-size: 30px; color: white;  text-shadow: 3px -2px 7px #666;}
+        .bantxt { font-weight: 800; font-size: 30px; color: white;  text-shadow: 3px -2px 7px #666;}
         .banbox a { display: block; background-color: #31408E; color: white; font-weight: 550; width: 130px; height: 50px; line-height: 50px;
                     text-align: center; margin-top: 50px;}
         .banbox a:hover {background-color: black;}
@@ -34,8 +34,8 @@
         .col6 ul li p {display: block;width: 1280px; margin: 0 auto; margin-top: 10px;}
         
 
-        #boldtxt{font-size: 17px; width: 500px; font-weight: 800;}
-        #sintxt{font-size: 15px; color: #666;}
+        .boldtxt{font-size: 17px; width: 500px; font-weight: 800;}
+        .sintxt{font-size: 15px; color: #666;}
         
     </style>
 </head>
@@ -84,16 +84,16 @@
 
     <nav class="tabbar">
         <ul id="tab">
-            <li><a href="index.html" id="tabbar_txt">홈</a></li>
-            <li><a href="kakaoWork.html" id="tabbar_txt">서비스</a></li>
+            <li><a href="index.html" class="tabbar_txt">홈</a></li>
+            <li><a href="kakaoWork.html" class="tabbar_txt">서비스</a></li>
             <li><a href="kakaoI.html">카카오 i</a></li>
         </ul>
     </nav>
     <div class="ban">
         <ul class="banbox">
-            <li id="bantxt">일상에 AI를 더하다.</li>
-            <li id="bantxt">Kakao i</li>
-            <a href="#">자세히 보기</a>
+            <li class="bantxt">일상에 AI를 더하다.</li>
+            <li class="bantxt">Kakao i</li>
+		<li><a href="#">자세히 보기</a></li>
         </ul>
     </div>
     <div class="col6 line">
@@ -102,8 +102,8 @@
         <div class="col6_img"></div>
         <ul>
             <li>
-                <p id="boldtxt">자동차 안에서 모든 것을 음성으로 제어할 수 있습니다.</p>
-                <p id="sintxt">Kakao i 는 자동차 안에서의 경험을 더욱 편리하게 만듭니다. 목소리로 길을 찾고, 음악을 듣고, 카톡을 보내며 다양한 서비스를 이용합니다.</p>
+                <p class="boldtxt">자동차 안에서 모든 것을 음성으로 제어할 수 있습니다.</p>
+                <p class="sintxt">Kakao i 는 자동차 안에서의 경험을 더욱 편리하게 만듭니다. 목소리로 길을 찾고, 음악을 듣고, 카톡을 보내며 다양한 서비스를 이용합니다.</p>
             </li>
         </ul>
     </div>
@@ -115,8 +115,8 @@
         <div class="col6_img2"></div>
         <ul>
             <li>
-                <p id="boldtxt">카카오홈으로 우리 집을 더 스마트하게 만들 수 있습니다.</p>
-                <p id="sintxt">카카오홈에서는 말 한마디로 생활이 더욱 편리해집니다. Kakao i를 통해 난방, 조명, 다양한 IoT 가전 등 우리 집 곳곳을 음성으로 이용합니다.</p>
+                <p class="boldtxt">카카오홈으로 우리 집을 더 스마트하게 만들 수 있습니다.</p>
+                <p class="sintxt">카카오홈에서는 말 한마디로 생활이 더욱 편리해집니다. Kakao i를 통해 난방, 조명, 다양한 IoT 가전 등 우리 집 곳곳을 음성으로 이용합니다.</p>
             </li>
         </ul>
     </div>
