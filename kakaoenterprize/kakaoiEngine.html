@@ -15,12 +15,12 @@
         #tab { width: 1280px; margin: 0 auto;}
         .tabbar li { float: left;}
         .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
-        #tabbar_txt { color: #999;}
-        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+        .tabbar_txt { color: #999;}
+        .tabbar_txt::after { content: ">"; margin-left: 10px;}
 
         .ban {background-image: url(./img/kakaoiEngine_ban.jpg); width: 100%; height: 700px; background-size: contain; background-repeat: no-repeat; z-index: 5;}
         .banbox {width: 1280px; margin: 0 auto; padding-top: 120px;}
-        #bantxt { font-weight: 800; font-size: 30px; color: white; text-shadow: 3px -2px 7px #666;}
+        .bantxt { font-weight: 800; font-size: 30px; color: white; text-shadow: 3px -2px 7px #666;}
         .btn { display: block; background-color: #31408E; color: white; font-weight: 550; width: 130px; height: 50px; line-height: 50px;
                     text-align: center; margin-top: 50px; font-size: 14px;}
         .btn:hover {background-color: black;}
@@ -28,8 +28,8 @@
         .col1{clear: both; width: 1280px; margin: 0 auto; height: 350px;}
         .col1 div {float: left; width: 600px; margin: 20px;}
 
-        #boldtxt{font-size: 20px; width: 500px; font-weight: 800;}
-        #sintxt{font-size: 15px; color: #666;}
+        .boldtxt{font-size: 20px; width: 500px; font-weight: 800;}
+        .sintxt{font-size: 15px; color: #666;}
         
         .col2 { clear: both; width: 1280px;margin: 0 auto;}
         .col2 a {display: inline-block; width: 580px; height: 300px; margin: 20px; background-color: #f7f7f7;}
@@ -90,28 +90,28 @@
 
     <nav class="tabbar">
         <ul id="tab">
-            <li><a href="index.html" id="tabbar_txt">홈</a></li>
-            <li><a href="kakaoiEngine.html" id="tabbar_txt">기술</a></li>
+            <li><a href="index.html" class="tabbar_txt">홈</a></li>
+            <li><a href="kakaoiEngine.html" class="tabbar_txt">기술</a></li>
             <li><a href="kakaoiEngine.html">카카오 i 엔진</a></li>
         </ul>
     </nav>
     <div class="ban">
         <ul class="banbox">
-            <li id="bantxt">카카오의 AI 핵심 기술이 결합된</li>
-            <li id="bantxt">통합 인공지능 플랫폼</li>
+            <li class="bantxt">카카오의 AI 핵심 기술이 결합된</li>
+            <li class="bantxt">통합 인공지능 플랫폼</li>
         </ul>
     </div>
     
     <div class="col1">
         <div>
-            <p id="sintxt">인공지능(AI) 플랫폼 ‘카카오 i’는 카카오엔터프라이즈가 보유한 핵심 기술이자 미래 기술의 집약체입니다. 
+            <p class="sintxt">인공지능(AI) 플랫폼 ‘카카오 i’는 카카오엔터프라이즈가 보유한 핵심 기술이자 미래 기술의 집약체입니다. 
                 ‘카카오 i’는 음성을 알아듣고, 대화를 이해하며, 이미지를 인식하고, 
                 수많은 데이터를 확인하여 사용자가 원하는 것을 정확히 찾아줄 수 있습니다.
             </p>
             <a href="" class="btn">기술제휴 문의 <span>↗</span></a>
         </div>
         <div>
-            <p id="sintxt">우리가 추구하는 AI의 비전은 단순한 기술의 진화가 아닙니다. 
+            <p class="sintxt">우리가 추구하는 AI의 비전은 단순한 기술의 진화가 아닙니다. 
                 AI를 통해 일상의 모든 것들을 더 편리하게 이용할 수 있는 경험을 제공하는 것, 
                 특별한 지식 없이도 누구나 기술 진화의 혜택을 볼 수 있도록 하는 것. 
                 그것이 카카오엔터프라이즈가 AI 기술을 통해 만들어 가려는 세상입니다.
@@ -122,7 +122,7 @@
         <a href="">
             <span id="img1"></span>
             <span>
-                <p id="boldtxt">시각엔진</p>
+                <p class="boldtxt">시각엔진</p>
                 <p>카카오 i 시각엔진은 이미지에 담긴 다양한 정보를 인식하고 분석하여 이미지를 이해합니다.</p>
                 <p>더 알아보기 →</p>
             </span>
@@ -130,7 +130,7 @@
         <a href="">
             <span id="img2"></span>
             <span>
-                <p id="boldtxt">자연어처리엔진</p>
+                <p class="boldtxt">자연어처리엔진</p>
                 <p>카카오 i 자연어처리엔진은 언어에 담긴 의도와 목적을 이해하고 적절하게 응대함으로써 사람과 소통합니다.</p>
                 <p>더 알아보기 →</p>
             </span>
@@ -138,7 +138,7 @@
         <a href="">
             <span id="img3"></span>
             <span>
-                <p id="boldtxt">음성엔진</p>
+                <p class="boldtxt">음성엔진</p>
                 <p>카카오 i 음성언젠은 사람의 말소리를 인식 혹은 합성하고, 특정인의 목소리나 특정 키워드를 알아듣고 반응함으로써 사람과 소통합니다.</p>
                 <p>더 알아보기 →</p>
             </span>
@@ -146,7 +146,7 @@
         <a href="">
             <span id="img4"></span>
             <span>
-                <p id="boldtxt">번역엔진</p>
+                <p class="boldtxt">번역엔진</p>
                 <p>카카오 i 번역엔진은 소통의 맥락과 뉘앙스를 '이해'하는 자연스러운 번역을 통해 언어의 장벽을 낮춥니다.</p>
                 <p>더 알아보기 →</p>
             </span>
@@ -154,7 +154,7 @@
         <a href="">
             <span id="img5"></span>
             <span>
-                <p id="boldtxt">음악엔진</p>
+                <p class="boldtxt">음악엔진</p>
                 <p>카카오 i 음악엔진은 음악을 인식하고 분석함으로써 음악을 알아듣고 이해합니다.</p>
                 <p>더 알아보기 →</p>
             </span>
