@@ -12,7 +12,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 #gnb {  margin: 0 auto; width:100%; height: 70px; top: 0;
 		position: fixed; overflow: hidden; z-index: 201;}
 #gnb:HOVER {height: 350px; background-color: #fff; transition-duration:0.7s;}	
-#gnb:HOVER .logo {background-image: url("./img/logo_b.png");}
+#gnb:HOVER .logo {background-image: url("../img/logo_b.png");}
 #gnb:HOVER a {color: black;}
 /* #gnb.on {background-color: #dddddd; margin: 0 auto; width:100vw; height: 70px;
 		position: fixed; overflow: hidden; z-index: 201;} */
@@ -21,13 +21,13 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 #gnb li a {display:block; color: black; padding: 10px;text-align: center; color:white;}
 #gnb li a:HOVER {font-weight: 700}
 .logo {display: block; width: 280px; height: 40px; margin-left: 50px; margin-top: 13px; margin-right: 250px;
-		background-image: url("./img/logo_w.png");}
+		background-image: url("../img/logo_w.png");}
 .nav li {float: left;}
 #gnb li a:FIRST-CHILD {font-weight: 700; font-size: 20px;}
 #gnb li a:FIRST-CHILD:HOVER {border-bottom: 2px solid #32418C; height: 20px;}
 #gnb li a:HOVER {border-bottom: 1px solid #32418C; color:#32418C;}
 #sub_menu {font-size: 12px;}
-.link {background-image: url("./img/link.png"); display: inline-block; width: 15px;height: 15px;}
+.link {background-image: url("../img/link.png"); display: inline-block; width: 15px;height: 15px;}
 .injae {float: right; margin-left: 360px;}
 
 
