@@ -31,7 +31,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 
 
 /* footer 부분 */
-.ft { clear: both; width: 100%; height: 150px; background-color="#eee";}
+.ft { clear: both; width: 100%; height: 150px; background:#eee;}
 .fnb {clear: both; width: 100%; height: 30px; margin-top: 40px;}
 .fnb ul {width: 1280px; margin: 0 auto;}
 .fnb li {width: 100px; float: left; margin: 0 auto;}
