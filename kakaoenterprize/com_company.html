@@ -15,11 +15,11 @@
         #tab { width: 1280px; margin: 0 auto;}
         .tabbar li { float: left;}
         .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
-        #tabbar_txt { color: #999;}
-        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+        .tabbar_txt { color: #999;}
+        .tabbar_txt::after { content: ">"; margin-left: 10px;}
 
-        #boldtxt {font-weight: 900; font-size: 18px; color: #333;}
-        #sintxt { margin-top: 20px; color: #666; font-size: 15px;}
+        .boldtxt {font-weight: 900; font-size: 18px; color: #333;}
+        .sintxt { margin-top: 20px; color: #666; font-size: 15px;}
 
         #map { width: 1280px; height: 500px; margin: 0 auto;}
         
@@ -77,8 +77,8 @@
 
     <nav class="tabbar">
         <ul id="tab">
-            <li><a href="index.html" id="tabbar_txt">홈</a></li>
-            <li><a href="company_introduce.html" id="tabbar_txt">소개</a></li>
+            <li><a href="index.html" class="tabbar_txt">홈</a></li>
+            <li><a href="company_introduce.html" class="tabbar_txt">소개</a></li>
             <li><a href="com_company.html">오시는 길</a></li>
         </ul>
     </nav>
@@ -86,7 +86,7 @@
     <!-- 지도를 표시할 div 입니다 -->
     <div id="map"></div>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac8f3403fd1d728ab70d3644e3dae800"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac8f3403fd1d728ab70d3644e3dae800"></script>
     <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
@@ -99,20 +99,20 @@
     </script>
     <div class="intro">
         <ul>
-            <p id="boldtxt">카카오엔터프라이즈</p>
+            <p class="boldtxt">카카오엔터프라이즈</p>
             <li>
                 <p>주소</p>
-                <p id="sintxt">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동
+                <p class="sintxt">경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동
                     (주)카카오엔터프라이즈</p>
             </li>
             <li>
                 <p>이메일</p>
-                <p id="sintxt">contact@kakaoenterprise.com</p>
+                <p class="sintxt">contact@kakaoenterprise.com</p>
             </li>
         </ul>
         <ul>
-            <p id="boldtxt">제휴문의</p>
-            <p id="sintxt">카카오엔터프라이즈와 함께 당신의 비즈니스에 AI를 더하세요.</p>
+            <p class="boldtxt">제휴문의</p>
+            <p class="sintxt">카카오엔터프라이즈와 함께 당신의 비즈니스에 AI를 더하세요.</p>
             <a href="">문의하기 <span style="margin-left: 50px;">></span></a>
         </ul>
     </div>
