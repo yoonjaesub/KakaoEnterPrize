@@ -17,9 +17,10 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 /* #gnb.on {background-color: #dddddd; margin: 0 auto; width:100vw; height: 70px;
 		position: fixed; overflow: hidden; z-index: 201;} */
 #gnb li {float: center; width: 130px;}
+#gnb li:first-child {width: 280px;}
 #gnb li a {display:block; color: black; padding: 10px;text-align: center; color:white;}
 #gnb li a:HOVER {font-weight: 700}
-.logo {float: left; display: inline-block; width: 280px; height: 40px; margin-left: 50px; margin-top: 13px; margin-right: 250px;
+.logo {display: inline-block; width: 280px; height: 40px; margin-left: 50px; margin-top: 13px; margin-right: 250px;
 		background-image: url("../img/logo_w.png");}
 .nav li {float: left;}
 #gnb li a:FIRST-CHILD {font-weight: 700; font-size: 20px;}
