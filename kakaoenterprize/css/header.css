@@ -16,7 +16,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 #gnb:HOVER a {color: black;}
 /* #gnb.on {background-color: #dddddd; margin: 0 auto; width:100vw; height: 70px;
 		position: fixed; overflow: hidden; z-index: 201;} */
-#gnb li {float: center; width: 130px;}
+#gnb li {width: 130px;}
 #gnb li:first-child {width: 280px;}
 #gnb li a {display:block; color: black; padding: 10px;text-align: center; color:white;}
 #gnb li a:HOVER {font-weight: 700}
