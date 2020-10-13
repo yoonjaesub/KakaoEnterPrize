@@ -15,18 +15,18 @@
         #tab { width: 1280px; margin: 0 auto;}
         .tabbar li { float: left;}
         .tabbar li a{font-size: 13px; line-height: 3; color: black; font-weight: 700; margin: 5px;}
-        #tabbar_txt { color: #999;}
-        #tabbar_txt::after { content: ">"; margin-left: 10px;}
+        .tabbar_txt { color: #999;}
+        .tabbar_txt::after { content: ">"; margin-left: 10px;}
 
         .ban {background-image: url(./img/kakaoiEngine_ban.jpg); width: 100%; height: 700px; background-size: contain; background-repeat: no-repeat; z-index: 5;}
         .banbox {width: 1280px; margin: 0 auto; padding-top: 120px;}
-        #bantxt { font-weight: 800; font-size: 30px; color: white; text-shadow: 3px -2px 7px #666;}
+        .bantxt { font-weight: 800; font-size: 30px; color: white; text-shadow: 3px -2px 7px #666;}
         .btn { display: block; background-color: #31408E; color: white; font-weight: 550; width: 130px; height: 50px; line-height: 50px;
                     text-align: center; margin-top: 50px; font-size: 14px; }
         .btn:hover {background-color: black;}
 
-        #boldtxt{font-size: 15px; width: 800px; font-weight: 800; color: black;}
-        #sintxt{font-size: 13px; color: #666;}
+        .boldtxt{font-size: 15px; width: 800px; font-weight: 800; color: black;}
+        .sintxt{font-size: 13px; color: #666;}
         
         .col1 { width: 1280px; margin: 0 auto; height: auto; margin-top: 150px; height: 1300px;}
         .col1 li {  height: 450px; width: 400px; float: left; margin: 10px; position: relative;}
@@ -92,15 +92,15 @@
 
     <nav class="tabbar">
         <ul id="tab">
-            <li><a href="index.html" id="tabbar_txt">홈</a></li>
-            <li><a href="blog.html" id="tabbar_txt">기술블로그</a></li>
+            <li><a href="index.html" class="tabbar_txt">홈</a></li>
+            <li><a href="blog.html" class="tabbar_txt">기술블로그</a></li>
             <li><a href="blog.html">Tech &</a></li>
         </ul>
     </nav>
     <!-- <div class="ban"> -->
         <ul class="banbox">
-            <li id="" style="font-weight: 800; font-size: 48px;">Tech &</li>
-            <li id="" style="font-size: 24px; color: #333; margin-top: 30px;">AI 기술,그리고 크루들의 이야기를 기술블로그 Tech&에서 만나보세요.</li>
+            <li style="font-weight: 800; font-size: 48px;">Tech &</li>
+            <li style="font-size: 24px; color: #333; margin-top: 30px;">AI 기술,그리고 크루들의 이야기를 기술블로그 Tech&에서 만나보세요.</li>
             <a href="" class="btn">자세히보기<span>↗</span></a>
         </ul>
     </div>
@@ -109,8 +109,8 @@
             <li>
                 <p id="techLog">Tech log</p>
                 <img src="./img/blog_img1.jpg" alt="">
-                <p id="boldtxt">AI에게 어떻게 음성을 가르칠까?</p>
-                <p id="sintxt">시작하며
+                <p class="boldtxt">AI에게 어떻게 음성을 가르칠까?</p>
+                <p class="sintxt">시작하며
                     인간은 귀로 듣고, 입으로 말하여 타인과 의사소통합니다. 나와 대화할 수 있는 존재를 창조하고 싶다는 바람은 
                     많은 사람들이 오래전부터 상상하고, 소설로 쓰고, 연구해 왔습니다. 오늘날 그 바람은 음성을 듣고 정보를 이해하고, 
                     음성을 만들어 정보를 전달하는 대화형 인공지능(Artificial Intelligence, 이하 AI)의 시대가 도래하게 됨으로써 그 결실을 맺었습니다. 
@@ -124,8 +124,8 @@
             <li>
                 <p id="techLog">Tech log</p>
                 <img src="./img/blog_img2.jpg" alt="">
-                <p id="boldtxt">카카오 i의 작고 소중한 힐링</p>
-                <p id="sintxt">시작하며
+                <p class="boldtxt">카카오 i의 작고 소중한 힐링</p>
+                <p class="sintxt">시작하며
                     서기 2020년! 우리는 접촉이 공포가 되는 극단적 언택트(Untact) 시대를 맞이하고 말았습니다. 
                     사람보다는 키오스크, 전화보다는 배달 앱, 발품보다는 온라인 쇼핑이 편해진 건 그다지 새로운 이야기도 아니지만, 
                     ‘안’하는 것과 ‘못’하는 것은 아주 다르니까요. 
@@ -141,8 +141,8 @@
             <li>
                 <p id="crewTalk">Krew Talk</p>
                 <img src="./img/blog_img3.jpg" alt="">
-                <p id="boldtxt">기술 문서 작성 5단계</p>
-                <p id="sintxt">시작하며
+                <p class="boldtxt">기술 문서 작성 5단계</p>
+                <p class="sintxt">시작하며
                     안녕하세요. 카카오엔터프라이즈에서 테크니컬 라이터 업무를 진행하고 있는 테크니컬커뮤니케이션 셀의 
                     Crystal(김유리)과 Sandy(차신영)입니다. :)
                     이전 포스팅(Technical Writer에서 Technical Communicator로…)에서는 
@@ -162,8 +162,8 @@
             <li>
                 <p id="aiResearch">AI Research</p>
                 <img src="./img/blog_img4.jpg" alt="">
-                <p id="boldtxt">기계 독해를 이용한 웹 기반 오픈 도메인 한국어 질의응답</p>
-                <p id="sintxt">시작하며
+                <p class="boldtxt">기계 독해를 이용한 웹 기반 오픈 도메인 한국어 질의응답</p>
+                <p class="sintxt">시작하며
                     카카오엔터프라이즈 AI Lab(최동현, 김응균)이 성균관대학교(신동렬)와 함께 쓴 논문 
                     ‘기계 독해를 이용한 웹 기반 오픈 도메인 한국어 질의응답’이 제31회 한글 및 한국어정보처리 학술대회에 실렸습니다. 
                     한글날을 맞이해 매년 10월마다 열리는 한글 및 한국어정보처리 학술대회는 전산언어학과 언어학, 인공지능과 관련된 다양한 주제의
@@ -181,8 +181,8 @@
             <li>
                 <p id="techLog">Tech log</p>
                 <img src="./img/blog_img5.jpg" alt="">
-                <p id="boldtxt">카카오 i 번역 성능 향상 실험 : 대규모 말뭉치를 활용한...</p>
-                <p id="sintxt">시작하며
+                <p class="boldtxt">카카오 i 번역 성능 향상 실험 : 대규모 말뭉치를 활용한...</p>
+                <p class="sintxt">시작하며
                     사전학습(pretraining)은 데이터양이 절대적으로 적은 상황에서 적용하는 기법입니다. 
                     문제(본 훈련)에서 제시되는 것과 유사한 형태의 데이터로 모델을 사전학습시키면 본 훈련에 효과적인 매개변수(parameter) 
                     초기값 확보에 크게 도움이 되어서죠. 오늘날 대규모 말뭉치(corpus)를 사전학습한 언어 모델(language model)1이 
@@ -195,8 +195,8 @@
             <li>
                 <p id="ourStory">Our story</p>
                 <img src="./img/blog_img6.jpg" alt="">
-                <p id="boldtxt">AI 기술과 전시의 특별한 만남, 이랜드 THE PRIZE 노벨상</p>
-                <p id="sintxt">오늘날 가장 중요한 기술 중 하나로 자리잡은 AI 기술은 다양한 분야에서 사용되고 있습니다. 
+                <p class="boldtxt">AI 기술과 전시의 특별한 만남, 이랜드 THE PRIZE 노벨상</p>
+                <p class="sintxt">오늘날 가장 중요한 기술 중 하나로 자리잡은 AI 기술은 다양한 분야에서 사용되고 있습니다. 
                     모빌리티, IoT, 엔터테인먼트, 헬스케어 등 우리의 생활 곳곳에 더욱 가까워진 AI의 활용 범위 역시 점차 확대되고 있는데요. 
                     최근에는 문화 프로그램 중 하나인 전시회에서 카카오엔터프라이즈의 AI 기술이 적용되어 관람객들에게 편리함과 새로운 경험을 제공하고 있습니다.
                      그럼 전시회와 AI의 특별한 만남을 살펴보러 가실까요?  
@@ -208,8 +208,8 @@
             <li>
                 <p id="aiResearch">AI Research</p>
                 <img src="./img/blog_img7.jpg" alt="">
-                <p id="boldtxt">얼굴 인식 알고리즘 선행 연구를 소개합니다</p>
-                <p id="sintxt">시작하며
+                <p class="boldtxt">얼굴 인식 알고리즘 선행 연구를 소개합니다</p>
+                <p class="sintxt">시작하며
                     얼굴 인식 기술(face recognition)은 지난 수십 년간 컴퓨터 비전(computer vision)의 주요 연구 분야 중 하나로 자리매김하고 있습니다. 
                     [그림 1]처럼 시스템에 입력된 두 이미지 속 인물 간의 동일인 여부를 검증(verification)하거나, 
                     이미지 속 인물이 내부 데이터베이스(DB)에 미리 저장된 인물 중 누구와 가장 유사한지를 식별(identification)하는 데 
