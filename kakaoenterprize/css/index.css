@@ -36,13 +36,13 @@
 
 .con_bot {clear: both; width: 100vw; height: 800px; margin: 0 auto;}
 .cb_box {clear: both; width: 90%; height: 150px; margin: 0 auto; margin-top: 10px;}
-.cb_box li a {display:block; width: 25%; height: 100px; background:"white"; color:white; float:left;  margin-left: 40px;margin-right: 40px;}
+.cb_box li a {display:block; width: 25%; height: 100px; background-color:"white"; color:white; float:left;  margin-left: 40px;margin-right: 40px;}
 .cb_cate { color:#666; font-weight: 800;}
 .cb_tit { font-weight: 700; font-size: 20px; color:#333;}
 .cb_txt {font-weight: 300; font-size:15px; color:#666;}
 .cb_box li a:hover p{text-decoration:underline;}
 .cb_box2 {clear: both; width: 90%; height: 500px; margin: 0 auto; margin-top: 100px;}
-.cb_box2 li a {display:block; width: 25%; height: 100px; background:"white"; color:white; float:left;  margin-left: 40px;margin-right: 40px;}
+.cb_box2 li a {display:block; width: 25%; height: 100px; background-color:"white"; color:white; float:left;  margin-left: 40px;margin-right: 40px;}
 .cb_box2 li a:hover p{text-decoration:underline;}
 
 #cb_img1{background-image: url("../img/cb_tit1.jpg"); display:block; width: 100%; height: 230px; background-size: 100%,100%;}
