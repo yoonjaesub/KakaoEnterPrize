@@ -12,7 +12,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 #gnb {  margin: 0 auto; width:100%; height: 70px; top: 0;
 		position: fixed; overflow: hidden; z-index: 201;}
 #gnb:HOVER {height: 350px; background-color: #fff; transition-duration:0.7s;}	
-#gnb:HOVER .logo {background-image: url("../img/logo_b.png");}
+#gnb:HOVER .logo {background-image: url("./img/logo_b.png");}
 #gnb:HOVER a {color: black;}
 /* #gnb.on {background-color: #dddddd; margin: 0 auto; width:100vw; height: 70px;
 		position: fixed; overflow: hidden; z-index: 201;} */
