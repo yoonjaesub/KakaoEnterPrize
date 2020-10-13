@@ -22,7 +22,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 .logo {display: block; width: 280px; height: 40px; margin-left: 50px; margin-top: 13px; margin-right: 250px;
 		background-image: url("../img/logo_w.png");}
 .nav li {float: left;}
-#gnb li a:FIRST-CHILD {font-weight: 700; font-size: 20px; margin-top:15px;}
+#gnb li a:FIRST-CHILD {font-weight: 700; font-size: 20px; padding-top:20px;}
 #gnb li a:FIRST-CHILD:HOVER {border-bottom: 2px solid #32418C; height: 20px;}
 #gnb li a:HOVER {border-bottom: 1px solid #32418C; color:#32418C;}
 .sub_menu {font-size: 12px;}
